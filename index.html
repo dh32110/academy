@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="refresh" content="15; url=/main">
+	<!-- 5초 뒤 url로 이동 -->
+	<title>한식기행</title>
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+	<style>
+		body {
+			background: white;
+		}
+
+		#under,
+		.underimg {
+			width: 500px;
+			height: 400px;
+			cursor: pointer;
+		}
+
+		#under {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			margin-left: -242px;
+			margin-top: -250px;
+			animation-name: intro;
+			/*특명*/
+			animation-duration: 5s;
+			/*지속시간=총 구현시간 */
+			filter: drop-shadow(2px 4px 2px #aaa);
+		}
+
+		@keyframes intro {
+			0% {left: 50%;top: 0px;margin-left: -242px;opacity: 0.1;}
+			/* 25%  {left:50%; top:-50px; margin-left:-100px;}
+  			50%  {left:50%; top:100px; margin-left:-100px;opacity: 0.1;}
+  			75%  {left:50%; top:300px; margin-left:-100px;} */
+			100% {left: 50%;top: 50%;margin-left: -242px;}
+		}
+
+		/* .underimg {
+			box-shadow: 4px 4px 8px #ddd;
+		} */
+		.link {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			margin-left: -150px;
+			margin-top: 100px;
+		}
+
+		.link img {
+			width: 100px;
+			margin: 0 0 20px 0;
+		}
+
+		.google {
+			width: 100px;
+			margin: 20px;
+		}
+
+		.naver {
+			width: 100px;
+			padding: 0px 0px 15px 15px;
+		}
+
+		#fixAd {
+			position: fixed;
+			bottom: 0px;
+			left: 0px;
+			text-align: center;
+			background: #000;
+			color: #fff;
+			padding: 10px 10px 50px;
+			width: 100%;
+		}
+
+		#fixAd a {
+			color: #fff;
+			text-decoration: none;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div id="under">
+		<img src="kimgs/splash.svg" class="underimg" onclick="location.href='/main'">
+	</div>
+	<div id="fixAd">
+		<a href="https://www.google.com/search?q=splash+page+app&tbm=isch&ved=2ahUKEwiS0MrVsoP3AhUJ_JQKHeAbAvwQ2-cCegQIABAA&oq=splash+page+app&gs_lcp=CgNpbWcQAzIECAAQEzIICAAQCBAeEBMyCAgAEAgQHhATOgUIABCABDoGCAAQBxAeUMIKWLcRYMISaABwAHgAgAFpiAH7A5IBAzEuNJgBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=uppPYpKLCIn40wTgt4jgDw&bih=700&biw=1600"
+			target="new">
+			ⓒ2022 by KOFO. All Rights Reserved. 
+		</a>
+	</div>
+
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+#logos {
+  width: 200px;
+  position: absolute;
+  left:50%; top:100px; margin-left:-100px;
+  animation-name: intro; /*특명*/
+  animation-duration: 10s;  /*지속시간=총 구현시간 */
+  filter:drop-shadow(2px 4px 2px #000);
+  /*필터는 글씨와 박스모델이 아닌 이미지전용*/
+}
+h1{text-shadow: 1px 3px 2px red;}
+#ban{box-shadow: 1px 3px 2px blue; position: fixed; bottom: 30px; display: block; width: 800px; left: 50%; margin-left: -400px;}
+@keyframes intro {
+  0%   {left:50%; top:0px; margin-left:-100px;}
+  /* 25%  {left:50%; top:-50px; margin-left:-100px;}
+  50%  {left:50%; top:100px; margin-left:-100px;opacity: 0.1;}
+  75%  {left:50%; top:300px; margin-left:-100px;} */
+  100% {left:50%; top:100px; margin-left:-100px;}
+}
+/*
+
+CSS관련된 애니메이션 속성들
+https://www.w3schools.com/cssref/css3_pr_animation.asp
+투명도(Opacity) 100%=1.0   10%=0.1  
+https://www.w3schools.com/cssref/css3_pr_opacity.asp
+무한반복-인피니트
+https://www.w3schools.com/cssref/css3_pr_animation.asp
+트랜지션
+https://www.w3schools.com/css/css3_transitions.asp
+크기,회전 등 복잡
+https://www.w3schools.com/css/css3_2dtransforms.asp
+단순이동이 아닌 등가속(점차 빠르기)
+https://www.w3schools.com/css/css3_transitions.asp
+사진이미지 등 필터효과
+https://www.w3schools.com/cssref/css3_pr_filter.asp
+포토샵의 필터효과와 같은  예시
+https://www.w3schools.com/cssref/playdemo.asp?filename=playcss_filter&preval=drop-shadow(8px%208px%2010px%20gray)
+*/
+</style>
+</head>
+<body>
+<div id="ban">
+  banban
+</div>
+<h1>CSS Animation</h1>
+
+<img src="kimgs/splash.png" id="logos">
+
+<p><b>Note:</b> When an animation is finished, it goes back to its original style.</p>
+
+</body>
+</html>
+
+

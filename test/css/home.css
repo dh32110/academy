@@ -1,0 +1,11 @@
+body {
+    margin: 0 200px;
+}
+
+nav {
+    background: yellow;
+}
+
+section {
+    border: 2px #ddd solid;
+}
