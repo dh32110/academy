@@ -1,0 +1,56 @@
+@charset "utf-8";
+/* SIR 지운아빠 */
+
+
+/* 새글 스킨 (latest) */
+.skinmall {
+    margin-bottom: 20px;
+    /*background-color: #fff;*/
+}
+.skinmall-heading {
+    border-bottom: 3px solid transparent;
+}
+.skinmall-default>.skinmall-heading {
+    color: #333;
+    background-color: #fff;
+    border-color: #f5f5f5;
+}
+.skinmall-default>.skinmall-heading a {
+    display: inline-block;
+    border-bottom: 3px solid #333;
+    padding: 3px 15px 3px 0;
+    margin-bottom: -3px;
+    color: #000;
+    font-weight: bold;
+}
+.skinmall-body {
+    padding: 5px 0;
+}
+.skinmall-body ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.skinmall-body li {
+    margin: 0;
+    padding: 0;
+}
+.skinmall-body li .thumb {
+    display: inline-block;
+    width: 98%;
+    margin: 1%; padding-bottom:20px;
+    border: 1px solid #ededed;
+}
+.skinmall-body li .thumb img {
+    display: -webkit-box;
+    max-width: 90%;
+    height: auto;
+    margin: 5% auto;
+}
+.skinmall-body li a {
+    color: #333;
+    font-size: 0.95em;
+    width: 90%;
+    margin: 0 auto;
+    text-align:center;
+}
