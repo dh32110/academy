@@ -1,0 +1,10 @@
+ /*//////// 추가내용 /////////*/
+/*공통상단 섹션부분-로그인등...*/
+  a{text-decoration:none;} 
+  .afff{
+    color:#fff;
+  }
+  .afff:hover{
+    color: #ddd;
+  }
+  
