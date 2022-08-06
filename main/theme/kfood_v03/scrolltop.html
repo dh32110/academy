@@ -1,0 +1,64 @@
+<!-- ad.html 준비중입니다. -->
+<!DOCTYPE html>
+<style type="text/css">
+/*scrollTop 02*/
+.dwld{text-decoration:none;background:#000;color:#fff;padding:2.2px 20px;border-radius:5px;cursor:pointer}.dwld:hover{background:#f00;color:#fff}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0px;
+}
+.gara{color:#555;font-size:30px;}
+.gara:hover {
+  color: #f00;
+}
+
+/**/
+.NeCo{margin-right:20px;}
+#NeAD{text-align: center;margin:50px auto 80px}
+#NeAD>a,.NeCo>a,#NeAD{text-decoration:none;margin-right:10px; font-size:12px;letter-spacing:-1px;}
+#NeAD>i{margin-right:5px}.derder{margin-right:5px}
+/*scrollTop 02 // */
+	</style>
+
+<!--
+scrollTop 01 // https://fontawesome.com/icons?d=gallery
+https://www.w3schools.com/bootstrap4/bootstrap_icons.asp
+-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+<script src="//t1.daumcdn.net/tistory_admin/lib/jquery/jquery-1.12.4.min.js"></script>
+<script data-ad-client="ca-pub-7067735757747704" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<div id="myBtn">
+	<div><i class="fa fa-caret-up gara" onclick="topFunction()" ></i></div>
+	<div><i class="fa fa-caret-down gara" onclick="location.href='#footer'"></i></div>
+</div>
+<script>
+var mybutton = document.getElementById("myBtn");
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+
+
+
+
